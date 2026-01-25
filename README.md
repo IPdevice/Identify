@@ -168,7 +168,6 @@ EvoSense is optimized for performance:
 - **C++ Accelerated Indexing**: Fast inverted index for rule matching
 - **Batch Processing**: Efficient batch processing of devices
 - **Caching**: LLM response caching to reduce API calls
-- **Early Termination**: Optimized validation with early termination
 
 ---
 
