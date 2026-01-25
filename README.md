@@ -1,7 +1,6 @@
 # EvoSense: An Internet-Scale Device Identification System
 
-![Uploading image.png…]()
-
+<img width="1271" height="255" alt="image" src="https://github.com/user-attachments/assets/8c9cf8d1-7a0d-4750-9193-3ac2436808ac" />
 
 **EvoSense** is an intelligent device identification system that continuously evolves with the network ecosystem. It leverages Large Language Models (LLMs) through workflow orchestration and multi-agent collaboration to accurately identify and classify network devices, while heuristically maintaining and expanding its rule database to improve coverage and efficiency over time.
 
