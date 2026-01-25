@@ -1,6 +1,7 @@
-# EvoSense: An Evolving Device Identification System
+# EvoSense: An Internet-Scale Device Identification System
 
-[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
+![Uploading image.png…]()
+
 
 **EvoSense** is an intelligent device identification system that continuously evolves with the network ecosystem. It leverages Large Language Models (LLMs) through workflow orchestration and multi-agent collaboration to accurately identify and classify network devices, while heuristically maintaining and expanding its rule database to improve coverage and efficiency over time.
 
