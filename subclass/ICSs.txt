@@ -1,0 +1,3 @@
+- Core control systems (such as Crestron CP2E, Rockwell, SCADA, Controllers, HMI Controllers, PLCs)
+- Automation systems (such as Fox, Niagara Fox, Building Automation)
+- Communication network devices (such as Moxa NPort, Milesight Industrial Cellular Routers)

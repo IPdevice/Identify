@@ -1,0 +1,5 @@
+- Cameras (such as Hikvision, Dahua, TRENDnet, Avtech, IP cameras, NVRs, DVRs, webcams)
+- Printers (such as Samsung printers, laser printers, multifunction printers, print servers)
+- Video devices (such as video conferencing systems, video devices)
+- Telephony devices (such as VoIP phones)
+- Smart home devices (such as Chromecast, media players, streaming devices, smart TVs, Domoticz, Philips Hue, smart plugs, smart glasses, smart clothing)

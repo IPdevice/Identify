@@ -1,0 +1,102 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ddgs"
+description = "Dux Distributed Global Search. A metasearch library that aggregates results from diverse web search services."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+keywords = ["python", "search", "metasearch"]
+authors = [
+  {name = "deedy5"}
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "click>=8.1.8",
+    "primp>=0.15.0",
+    "lxml>=4.9.4",
+    "httpx[http2,socks,brotli]>=0.28.1",  # temporarily
+]
+dynamic = ["version"]
+
+[project.urls]  # Optional
+"Homepage" = "https://github.com/deedy5/ddgs"
+
+[project.scripts]
+ddgs = "ddgs.cli:safe_entry_point"
+
+[tool.setuptools.dynamic]
+version = {attr = "ddgs.__version__"}
+
+[project.optional-dependencies]
+dev = [
+    "mypy>=1.17.1",
+    "pytest>=8.4.1",
+    "pytest-dependency>=0.6.0",
+    "ruff>=0.13.0",
+]
+
+[tool.ruff]
+line-length = 120
+exclude = ["tests"]
+
+[tool.ruff.lint]
+select = [
+    # Core rules
+    "E", # pycodestyle errors
+    "W", # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+
+    # Enhanced rules
+    "S",  # flake8-bandit
+    "B",  # flake8-bugbear
+    "A",  # flake8-builtins
+    "C4",  # flake8-comprehensions
+    "DTZ",  # flake8-datetimez
+    "EM",  # flake8-errmsg
+    "FA",  # flake8-future-annotations
+    "ISC",  # flake8-implicit-str-concat
+    "LOG",  # flake8-logging
+    "G",  # flake8-logging-format
+    "PIE",  # flake8-pie
+    "RET",  # flake8-return
+    "SIM",  # flake8-simplify
+    "PERF",  # perflint
+    "PLC",  # pylint-convention
+    "PLE",  # pylint-error
+    "UP",  # pyupgrade
+    "RUF",  # ruff-specific rules
+
+    # Documentation
+    "D",  # pydocstyle
+]
+ignore = [
+    "D107",  # Missing docstring in `__init__`
+    "D203",    # incorrect-blank-line-before-class
+    "D213",    # multi-line-summary-second-line
+]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+exclude = ["build/"]
+
+[[tool.mypy.overrides]]
+module = "ddgs.cli"
+warn_unused_ignores = false

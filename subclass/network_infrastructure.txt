@@ -1,0 +1,4 @@
+- Load balancers (such as BigIP, load balancer, load balancing devices)
+- Proxy devices (such as VPNs, proxy servers, virtual private networks)
+- Firewalls (such as SonicWall, FortiGate, Check Point, WAF, firewall, web application firewall)
+- Interconnection devices (such as Cisco, MikroTik, FRITZ!Box, routers, switches, hubs, gateways, router, switch, hub, device hub, Huawei Home Gateway, Gateway, VoIP Gateway, SIP Gateway)

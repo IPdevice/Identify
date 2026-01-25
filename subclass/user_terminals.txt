@@ -1,0 +1,3 @@
+- Workstations (such as workstations)
+- User computers (such as PCs, laptops, desktop computers, Apple Remote Desktop)
+- User mobile devices (such as Android Debug Bridge (ADB), cell phones, VoIP phones, mobile phones)

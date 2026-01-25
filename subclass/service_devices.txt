@@ -1,0 +1,3 @@
+- Application service devices (such as Windows Server, CDN, Mail Server, FTP Server, DNS Server, Microsoft Exchange)
+- Network storage devices (such as Synology, QNAP, NAS, Storage, database)
+- Server management systems (such as Webmin, VMware ESXi)

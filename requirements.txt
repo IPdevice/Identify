@@ -1,0 +1,15 @@
+# Core dependencies
+openai>=1.0.0
+aiofiles>=23.0.0
+requests>=2.31.0
+httpx>=0.24.0
+tiktoken>=0.5.0
+tqdm>=4.65.0
+
+# Search and indexing
+whoosh>=2.7.4
+
+# Standard library dependencies (included for reference)
+# json, asyncio, pathlib, os, time, re, argparse, subprocess, fcntl, shutil, hashlib, traceback, hmac
+# These are part of Python standard library and don't need to be installed
+
