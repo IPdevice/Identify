@@ -1,13 +1,13 @@
-# EvoSense: An Internet-Scale Device Identification System
+# Helix: Accurate Internet-Scale Device Identification
 
 <img width="1271" height="255" alt="image" src="https://github.com/user-attachments/assets/8c9cf8d1-7a0d-4750-9193-3ac2436808ac" />
 
-**EvoSense** is an intelligent device identification system that continuously evolves with the network ecosystem. It leverages Large Language Models (LLMs) through workflow orchestration and multi-agent collaboration to accurately identify and classify network devices, while heuristically maintaining and expanding its rule database to improve coverage and efficiency over time.
+**Helix** is an intelligent device identification system that continuously evolves with the network ecosystem. It leverages Large Language Models (LLMs) through workflow orchestration and multi-agent collaboration to accurately identify and classify network devices, while heuristically maintaining and expanding its rule database to improve coverage and efficiency over time.
 
 
 ## 🎯 Overview
 
-EvoSense addresses the challenge of device identification in dynamic network environments by combining:
+Helix addresses the challenge of device identification in dynamic network environments by combining:
 
 - **Multi-dimensional Information Collection**: Scans IP addresses and collects comprehensive device information
 - **LLM-based Intelligent Labeling**: Employs specialized agents for hierarchical device classification
@@ -16,7 +16,7 @@ EvoSense addresses the challenge of device identification in dynamic network env
 
 ## 🏗️ System Architecture
 
-EvoSense operates through a multi-stage pipeline:
+Helix operates through a multi-stage pipeline:
 
 1. **Data Collection** : Scans IP addresses and collects multidimensional device information
 2. **Rule Matching**: If data matches existing rules, outputs device type according to match strategy
@@ -48,8 +48,8 @@ EvoSense operates through a multi-stage pipeline:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/EvoSense.git
-cd EvoSense
+git clone https://github.com/yourusername/Helix.git
+cd Helix
 ```
 
 ### 2. Install Dependencies
@@ -128,7 +128,7 @@ The system generates:
 ## 📁 Project Structure
 
 ```
-EvoSense/
+Helix/
 ├── main.py                 # Main entry point and orchestration
 ├── config.py               # API key configuration
 ├── rules.json              # Rule database (auto-updated)
@@ -164,7 +164,7 @@ Edit the files in `subclass/` to customize or extend device categories:
 
 ## 📊 Performance
 
-EvoSense is optimized for performance:
+Helix is optimized for performance:
 - **C++ Accelerated Indexing**: Fast inverted index for rule matching
 - **Batch Processing**: Efficient batch processing of devices
 - **Caching**: LLM response caching to reduce API calls
