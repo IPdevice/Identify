@@ -10,7 +10,7 @@
 Helix addresses the challenge of device identification in dynamic network environments by combining:
 
 - **Multi-dimensional Information Collection**: Scans IP addresses and collects comprehensive device information
-- **LLM-based Intelligent Labeling**: Employs specialized agents for hierarchical device identifcation
+- **LLM-based Intelligent Labeling**: Employs specialized agents for hierarchical device identification
 - **Heuristic Rule Management**: Automatically maintains and optimizes a rule database for efficient matching
 - **Continuous Evolution**: Adapts to new device types and network patterns over time
 
@@ -22,7 +22,7 @@ Helix operates through a multi-stage pipeline:
 2. **Rule Matching**: If data matches existing rules, outputs device type according to match strategy
 3. **LLM-based Labeling** : Triggers intelligent labeling process for unmatched devices
 4. **Semantic Extraction** : Extracts key fields from multidimensional information, with optional Deep Search module for comprehensive content understanding
-5. **Hierarchical Identifcation** :
+5. **Hierarchical Identification** :
    - **Macro-Class Identification Agent**: Assigns device to one of five major categories
    - **Micro-Class Agents**: Identify subcategories and extend them when needed
 6. **Rule Induction** : Derives new rules from identification results, integrating key features with LLM reasoning traces
@@ -30,8 +30,8 @@ Helix operates through a multi-stage pipeline:
 
 ## ✨ Key Features
 
-- **Multi-Agent Collaboration**: Specialized agents for different identifcation tasks
-- **Hierarchical Identifcation**: Two-level identifcation (macro-class → micro-class)
+- **Multi-Agent Collaboration**: Specialized agents for different identification tasks
+- **Hierarchical Identification**: Two-level identification (macro-class → micro-class)
 - **Automatic Rule Generation**: Extracts and validates rules from LLM reasoning
 - **Rule Quality Assurance**: Sample validation, LLM evaluation, and inverted index checks
 - **Continuous Learning**: Rule database evolves with new device types
@@ -121,7 +121,7 @@ Example structure:
 
 The system generates:
 - `res_result.json`: Detailed identification results for each device
-- `final_label.txt`: Device labels in the format `main_category|subcategory`
+- `final_label.txt`: Device labels in the format `major_category|subcategory`
 - `rules.json`: Updated rule database (automatically maintained)
 
 
@@ -152,7 +152,7 @@ Helix/
 
 ## 🔧 Advanced Configuration
 
-### Customizing Identifcation Categories
+### Customizing Identification Categories
 
 Edit the files in `subclass/` to customize or extend device categories:
 - `ICSs.txt`: Industrial Control Systems
